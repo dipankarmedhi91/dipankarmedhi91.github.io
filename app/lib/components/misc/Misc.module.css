@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btnStyle {
+  font: inherit;
+  font-weight: bold;
+  height: 3em;
+  border: 2px solid black;
+  background-color: #f2f4f5;
+  padding: 1em;
+  margin: 1em;
+  width: 20em;
+}
+
+.navSection {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+
+.contentSection {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+}
+
+.contentSection p {
+  margin: 10px 0 10px 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.contentSection li a {
+  font-family: "Roboto", sans-serif;
+  margin: 5px;
+  text-decoration: none;
+  color: #0000ffad;
+}

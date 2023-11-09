@@ -1,0 +1,62 @@
+.main {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+
+.main article {
+  padding: 50px;
+  white-space: pre-wrap;
+}
+
+.main article p {
+  margin: 15px 0;
+}
+
+.main article p a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #0000ffad;
+  font-size: 1.1em;
+}
+
+.main article p a svg {
+  margin: 0 0 -5px 5px;
+}
+
+.main article p a:hover {
+  color: #0000ffdb;
+}
+
+.imageSection img {
+  zoom: 1;
+  border-radius: 50%;
+  padding: 45px;
+  width: 400px;
+  height: 400px;
+}
+
+.iconlinks {
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-flow: column;
+    width: 100%;
+  }
+  .imageSection {
+    display: flex;
+    justify-content: center;
+  }
+  .imageSection img {
+    zoom: 1;
+    border-radius: 50%;
+    padding: 25px 0;
+    width: 250px;
+    height: 250px;
+  }
+  .main article {
+    padding: 20px 50px;
+  }
+}

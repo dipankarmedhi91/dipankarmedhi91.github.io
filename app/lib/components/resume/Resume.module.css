@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navSection {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+.btnStyle {
+  font: inherit;
+  font-weight: bold;
+  height: 3em;
+  border: 2px solid black;
+  background-color: #f2f4f5;
+  padding: 1em;
+  margin: 1em;
+  width: 10em;
+}
+
+.btnStyle:hover {
+  background-color: #8585eead;
+  color: #292828;
+  /* filter: invert(90%); */
+}
+
+.btnStyle:active {
+  background-color: #6666dead;
+  color: #000000;
+}
+
+.mainSection {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 95%;
+  }
+}
