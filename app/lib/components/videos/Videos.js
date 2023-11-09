@@ -25,7 +25,7 @@ const Videos = () => {
   return (
     <div className={styles.main}>
       <section className={styles.header}>
-        I'm a beginner guitarist, still trying to learn this beautiful
+        I&apos;m a beginner guitarist, still trying to learn this beautiful
         instrument and recording a couple of my attempts at songs I Love
         <span role="img" aria-label="guitar">
           ❤️🎸🎸

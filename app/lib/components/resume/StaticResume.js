@@ -45,7 +45,7 @@ const StaticResume = () => {
           <p className={styles.roleName}>
             <em>Specialist – Application Architecture, July 2019 to present</em>{" "}
           </p>
-          As a member of architecture team I'm responsible for
+          As a member of architecture team I&apos;m responsible for
           <ul>
             <li>
               Creation and maintenance of foundational packages for Node.js, Ext

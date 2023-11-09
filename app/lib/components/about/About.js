@@ -21,7 +21,7 @@ const About = () => {
       </section>
       <section>
         <article>
-          <p>Hi, I'm Dipankar.</p>
+          <p>Hi, I&apos;m Dipankar.</p>
           <p>Welcome to my personal website.</p>
           <p>Working as a fullstack JavaScript developer.</p>
           <p>
@@ -51,7 +51,7 @@ const About = () => {
             View my <Link href="/resume">résumé</Link> for more information.
           </p>
           <p>
-            Projects I'm <Link href="/tinkerbox">tinkering</Link> with{" "}
+            Projects I&apos;m <Link href="/tinkerbox">tinkering</Link> with{" "}
             <span role="img" aria-label="laptop">
               👨‍💻💻
             </span>
