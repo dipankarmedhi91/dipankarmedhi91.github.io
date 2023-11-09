@@ -6,9 +6,8 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "nextjsportfolio" branch
   push:
-    branches: [ "nextjsportfolio" ]
-  pull_request:
-    branches: [ "nextjsportfolio" ]
+    branches:
+      - nextjsportfolio
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
