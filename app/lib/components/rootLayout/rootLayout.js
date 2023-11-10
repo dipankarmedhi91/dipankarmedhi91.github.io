@@ -48,7 +48,7 @@ const Layout = (props) => {
 
         <div className={layoutStyles.logoTop}>
           <h1>
-            <Link onClick={() => onLinkClick('About')} href={"/"} as={"/"}>Dipankar Medhi</Link>
+            <Link onClick={() => onLinkClick('About')} href={"/"}>Dipankar Medhi</Link>
           </h1>
         </div>
 
