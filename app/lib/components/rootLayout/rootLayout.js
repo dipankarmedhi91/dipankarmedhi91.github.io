@@ -48,7 +48,7 @@ const Layout = (props) => {
 
         <div className={layoutStyles.logoTop}>
           <h1>
-            <Link onClick={() => onLinkClick('About')} href={"/"}>Dipankar Medhi</Link>
+            <Link onClick={() => onLinkClick('About')} href={"/"} as={"/"}>Dipankar Medhi</Link>
           </h1>
         </div>
 
@@ -61,7 +61,7 @@ const Layout = (props) => {
                   item.name === pageName ? layoutStyles.activeTab : ""
                 }
               >
-                <Link href={item.path} onClick={() => onLinkClick(item.name)}>{item.name}</Link>
+                <Link href={item.path} as={item.path} onClick={() => onLinkClick(item.name)}>{item.name}</Link>
               </li>
             ))}
           </ul>
@@ -85,7 +85,7 @@ const Layout = (props) => {
                   item.name === pageName ? layoutStyles.activeTab : ""
                 }
               >
-                <Link href={`${item.path}`} onClick={() => onLinkClick(item.name)}>{item.name}</Link>
+                <Link href={`${item.path}`} as={`${item.path}`} onClick={() => onLinkClick(item.name)}>{item.name}</Link>
               </li>
             ))}
           </ul>

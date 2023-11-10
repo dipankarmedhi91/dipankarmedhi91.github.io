@@ -48,16 +48,16 @@ const About = () => {
           </p>
           <p></p>
           <p>
-            View my <Link href="/resume">résumé</Link> for more information.
+            View my <Link href="/resume" as="/resume">résumé</Link> for more information.
           </p>
           <p>
-            Projects I&apos;m <Link href="/tinkerbox">tinkering</Link> with{" "}
+            Projects I&apos;m <Link href="/tinkerbox" as="/tinkerbox">tinkering</Link> with{" "}
             <span role="img" aria-label="laptop">
               👨‍💻💻
             </span>
           </p>
           <p>
-            My awkward guitar <Link href="/videos">videos</Link>{" "}
+            My awkward guitar <Link href="/videos" as="/videos">videos</Link>{" "}
             <span role="img" aria-label="guitar">
               🎸😄
             </span>
