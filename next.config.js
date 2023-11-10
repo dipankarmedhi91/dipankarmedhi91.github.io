@@ -21,11 +21,15 @@
 // module.exports = nextConfig;
 
 const debug = process.env.NODE_ENV !== "production";
-const prod = process.env.NODE_ENV === 'production'
+const prod = process.env.NODE_ENV === "production";
 
 module.exports = {
   env: {
-    BACKEND_URL: prod ? '' : '',
+    BACKEND_URL: prod ? "" : "",
+  },
+  output: "export",
+  images: {
+    unoptimized: true,
   },
   // exportPathMap: function () {
   //   return {
