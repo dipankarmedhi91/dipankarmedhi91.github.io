@@ -27,14 +27,14 @@ module.exports = {
   env: {
     BACKEND_URL: prod ? '' : '',
   },
-  exportPathMap: function () {
-    return {
-      "/": { page: "/" },
-      "/misc": { page: "/misc" },
-      "/tinkerbox": { page: "/tinkerbox" },
-      "/videos": { page: "/videos" },
-    };
-  },
+  // exportPathMap: function () {
+  //   return {
+  //     "/": { page: "/" },
+  //     "/misc": { page: "/misc" },
+  //     "/tinkerbox": { page: "/tinkerbox" },
+  //     "/videos": { page: "/videos" },
+  //   };
+  // },
   assetPrefix: !debug ? "" : "",
   webpack: (config, { dev }) => {
     config.module.rules = config.module.rules.map((rule) => {
