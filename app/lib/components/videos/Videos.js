@@ -19,6 +19,7 @@ const Videos = () => {
       allowfullscreen: "1",
       autoplay: "1",
     });
+    element.previousSibling.remove();
     element.parentNode.replaceChild(iframe, element);
   };
 
@@ -35,10 +36,14 @@ const Videos = () => {
         {MyVideos.map((video) => (
           <div key={video.name} className={styles.videoPanel}>
             <div>{video.name}</div>
+            <span className={styles.circle}>
+              <span className={styles.angle}></span>
+            </span>
             <Image
-              src={require(`../../images/${video.image}`)}
+              src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
               alt={`Guitar Pic for ${video.name}`}
-              placeholder="blur"
+              width={450}
+              height={300}
               onClick={(e) => onVideoImageClick(e, video.src)}
             />
           </div>

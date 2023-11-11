@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import * as styles from "./About.module.css";
-import ProfileImage from "../../images/main_image.webp";
+import ProfileImage from "../../images/img.jpeg";
 import Image from "next/image";
 
 import { Linkedin, Email, Location } from "../../common/Icons";

@@ -11,6 +11,7 @@
 
 .main article p {
   margin: 15px 0;
+  line-height: 1.2rem;
 }
 
 .main article p a {
@@ -33,7 +34,7 @@
   border-radius: 50%;
   padding: 45px;
   width: 400px;
-  height: 400px;
+  height: auto;
 }
 
 .iconlinks {

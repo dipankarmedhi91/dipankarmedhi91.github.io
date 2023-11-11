@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import * as layoutStyles from "./Layout.module.css";
 import { HamburgerMenu } from "../../common/Icons";
@@ -32,10 +33,7 @@ const navItems = [
 
 const Layout = (props) => {
   const [menuOpen, setMenuOpen] = useState(0);
-  const [pageName, setPageName] = useState('About');
-  const onLinkClick = (name) => {
-    setPageName(name);
-  }
+  const pathname = usePathname();
   return (
     <div className={layoutStyles.base}>
       <header className={layoutStyles.header}>
@@ -48,7 +46,9 @@ const Layout = (props) => {
 
         <div className={layoutStyles.logoTop}>
           <h1>
-            <Link onClick={() => onLinkClick('About')} href={"/"}>Dipankar Medhi</Link>
+            <Link href={"/"}>
+              Dipankar Medhi
+            </Link>
           </h1>
         </div>
 
@@ -57,11 +57,14 @@ const Layout = (props) => {
             {navItems.map((item) => (
               <li
                 key={item.name}
-                className={
-                  item.name === pageName ? layoutStyles.activeTab : ""
-                }
+                className={item.path === pathname ? layoutStyles.activeTab : ""}
               >
-                <Link href={item.path} as={item.path} onClick={() => onLinkClick(item.name)}>{item.name}</Link>
+                <Link
+                  href={item.path}
+                  as={item.path}
+                >
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -81,11 +84,14 @@ const Layout = (props) => {
               <li
                 key={item.name}
                 onClick={() => setMenuOpen(0)}
-                className={
-                  item.name === pageName ? layoutStyles.activeTab : ""
-                }
+                className={item.path === pathname ? layoutStyles.activeTab : ""}
               >
-                <Link href={`${item.path}`} as={`${item.path}`} onClick={() => onLinkClick(item.name)}>{item.name}</Link>
+                <Link
+                  href={`${item.path}`}
+                  as={`${item.path}`}
+                >
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
