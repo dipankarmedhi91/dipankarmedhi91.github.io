@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 const btnStyle = {
   borderRadius: "5px",
   cursor: "pointer",
-  // border: 'none'
 };
 
 const DefaultButton = ({ disabled = false, children, ...props }) => {
