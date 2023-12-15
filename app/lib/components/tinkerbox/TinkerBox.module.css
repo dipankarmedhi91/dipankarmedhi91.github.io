@@ -1,4 +1,40 @@
 .main {
   display: flex;
   width: 70%;
+  .content {
+    .project {
+      border: 1.5px solid lightgray;
+      padding: 10px;
+      border-radius: 10px;
+      .projectName {
+        text-align: left;
+        font-size: x-large;
+        margin: 10px 0;
+      }
+      .projectDescription {
+        font-size: medium;
+        margin: 10px 0 5px 0;
+        line-height: 1.4em;
+      }
+      .links {
+        display: inline-block;
+        font-size: medium;
+        margin: 5px 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: #175b97;
+      }
+      .links:hover{
+        color: #083359;
+      }
+      .icons {
+        display: inline-block;
+        color: black;
+        width: 1.2em;
+      }
+      .icons:hover{
+        color: #083359;
+      }
+    }
+  }
 }

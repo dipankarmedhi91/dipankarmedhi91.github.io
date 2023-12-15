@@ -14,13 +14,13 @@ const Misc = () => {
       <section className={styles.navSection}>
         <DefaultButton
           onClick={() => btnClick("myFavRes")}
-          className={styles.btnStyle}
+          className={`${styles.btnStyle} ${state === 'myFavRes'? styles.btnStyleActive : ''}`}
         >
           Fav Resources
         </DefaultButton>
         <DefaultButton
           onClick={() => btnClick("myNotes")}
-          className={styles.btnStyle}
+          className={`${styles.btnStyle} ${state === 'myNotes'? styles.btnStyleActive : ''}`}
         >
           Notes
         </DefaultButton>

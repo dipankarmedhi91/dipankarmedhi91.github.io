@@ -23,10 +23,13 @@
   width: 10em;
 }
 
+.btnStyleActive {
+  background-color: #c8c8e5ad;
+}
+
 .btnStyle:hover {
-  background-color: #8585eead;
+  background-color: #a8a8f3ad;
   color: #292828;
-  /* filter: invert(90%); */
 }
 
 .btnStyle:active {

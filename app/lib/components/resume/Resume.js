@@ -15,13 +15,13 @@ const Resume = () => {
       <section className={styles.navSection}>
         <DefaultButton
           onClick={() => btnClick("static")}
-          className={styles.btnStyle}
+          className={`${styles.btnStyle} ${state === 'static'? styles.btnStyleActive : ''}`}
         >
           Static
         </DefaultButton>
         <DefaultButton
           onClick={() => btnClick("interactive")}
-          className={styles.btnStyle}
+          className={`${styles.btnStyle}  ${state === 'interactive'? styles.btnStyleActive : ''}`}
         >
           Interactive
         </DefaultButton>

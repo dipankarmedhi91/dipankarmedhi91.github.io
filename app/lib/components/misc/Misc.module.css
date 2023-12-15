@@ -13,7 +13,21 @@
   background-color: #f2f4f5;
   padding: 1em;
   margin: 1em;
-  width: 20em;
+  width: 10em;
+}
+
+.btnStyleActive {
+  background-color: #c8c8e5ad;
+}
+
+.btnStyle:hover {
+  background-color: #a8a8f3ad;
+  color: #292828;
+}
+
+.btnStyle:active {
+  background-color: #6666dead;
+  color: #000000;
 }
 
 .navSection {
@@ -29,9 +43,13 @@
 }
 
 .contentSection p {
-  margin: 10px 0 10px 0;
+  margin: 25px 0 10px 0;
   font-size: 1em;
   font-weight: bold;
+}
+
+.contentSection li {
+  margin: 8px 0;
 }
 
 .contentSection li a {
