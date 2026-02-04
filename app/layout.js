@@ -1,9 +1,9 @@
 import { Merriweather } from "next/font/google";
 import "./globals.css";
 
-import Layout from "./lib/components/rootLayout/rootLayout";
+import Layout from "@/components/rootLayout/rootLayout";
 
-const inter = Merriweather({ weight: '400', subsets: ['latin'] });
+const inter = Merriweather({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Dipankar Medhi",

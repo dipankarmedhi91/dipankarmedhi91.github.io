@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 
-import About from "./lib/components/about/About";
+import About from "@/components/about/About";
 
 export default function Home() {
   return (

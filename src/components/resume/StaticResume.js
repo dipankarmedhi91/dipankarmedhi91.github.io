@@ -1,7 +1,7 @@
 import React from "react";
 
 import * as styles from "./StaticResume.module.css";
-import { getExperience } from "../../common/Utils";
+import { getExperience } from "@/lib/Utils";
 
 const StaticResume = () => {
   return (
@@ -62,8 +62,10 @@ const StaticResume = () => {
               repository, pipeline and others with DevOps team
             </li>
             <li>
-            Designed the core functionality using Form.io for authoring assessments and 
-            Web Components for isolated rendering which streamlined business processes leading to faster time to market and cost savings
+              Designed the core functionality using Form.io for authoring
+              assessments and Web Components for isolated rendering which
+              streamlined business processes leading to faster time to market
+              and cost savings
             </li>
             <li>
               Work on RnD and create various PoC&apos;s on different tools and

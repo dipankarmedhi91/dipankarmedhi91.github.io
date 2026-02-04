@@ -4,7 +4,7 @@ import * as styles from "./TinkerBox.module.css";
 
 import { MyProjects } from "./myProjects";
 
-import { Github, ExternalLink } from "../../common/Icons";
+import { Github, ExternalLink } from "@/lib/Icons";
 
 const TinkerBox = () => {
   return (
@@ -15,19 +15,11 @@ const TinkerBox = () => {
             <div key={project.name} className={styles.project}>
               <p className={styles.projectName}>{project.name}</p>
               <p className={styles.projectDescription}>{project.description}</p>
-              <a
-                className={styles.links}
-                href={project.github}
-                target="_blank"
-              >
+              <a className={styles.links} href={project.github} target="_blank">
                 Github <div className={styles.icons}>{Github}</div>
               </a>
               <br />
-              <a
-                className={styles.links}
-                href={project.site}
-                target="_blank"
-              >
+              <a className={styles.links} href={project.site} target="_blank">
                 Live Site <div className={styles.icons}>{ExternalLink}</div>
               </a>
             </div>

@@ -24,7 +24,7 @@
         text-decoration: none;
         color: #175b97;
       }
-      .links:hover{
+      .links:hover {
         color: #083359;
       }
       .icons {
@@ -32,7 +32,7 @@
         color: black;
         width: 1.2em;
       }
-      .icons:hover{
+      .icons:hover {
         color: #083359;
       }
     }

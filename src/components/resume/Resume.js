@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import * as styles from "./Resume.module.css";
 import StaticResume from "./StaticResume";
 import InteractiveResume from "./InteractiveResume";
-import DefaultButton from "../../common/DefaultButton";
+import DefaultButton from "@/lib/DefaultButton";
 
 const Resume = () => {
   const [state, setstate] = useState("static");
@@ -15,13 +15,13 @@ const Resume = () => {
       <section className={styles.navSection}>
         <DefaultButton
           onClick={() => btnClick("static")}
-          className={`${styles.btnStyle} ${state === 'static'? styles.btnStyleActive : ''}`}
+          className={`${styles.btnStyle} ${state === "static" ? styles.btnStyleActive : ""}`}
         >
           Static
         </DefaultButton>
         <DefaultButton
           onClick={() => btnClick("interactive")}
-          className={`${styles.btnStyle}  ${state === 'interactive'? styles.btnStyleActive : ''}`}
+          className={`${styles.btnStyle}  ${state === "interactive" ? styles.btnStyleActive : ""}`}
         >
           Interactive
         </DefaultButton>

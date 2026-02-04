@@ -1,6 +1,9 @@
-const debug = process.env.NODE_ENV !== "production";
+const withMDX = require("@next/mdx")();
 
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Configure `pageExtensions` to include markdown and MDX files
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   output: "export",
   images: {
     unoptimized: true,
@@ -15,3 +18,5 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = withMDX(nextConfig);

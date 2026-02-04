@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import * as layoutStyles from "./Layout.module.css";
-import { HamburgerMenu } from "../../common/Icons";
+import { HamburgerMenu } from "@/lib/Icons";
 import "./Layout.reset.css";
 
 const navItems = [
@@ -46,9 +46,7 @@ const Layout = (props) => {
 
         <div className={layoutStyles.logoTop}>
           <h1>
-            <Link href={"/"}>
-              Dipankar Medhi
-            </Link>
+            <Link href={"/"}>Dipankar Medhi</Link>
           </h1>
         </div>
 
@@ -59,10 +57,7 @@ const Layout = (props) => {
                 key={item.name}
                 className={item.path === pathname ? layoutStyles.activeTab : ""}
               >
-                <Link
-                  href={item.path}
-                  as={item.path}
-                >
+                <Link href={item.path} as={item.path}>
                   {item.name}
                 </Link>
               </li>
@@ -86,10 +81,7 @@ const Layout = (props) => {
                 onClick={() => setMenuOpen(0)}
                 className={item.path === pathname ? layoutStyles.activeTab : ""}
               >
-                <Link
-                  href={`${item.path}`}
-                  as={`${item.path}`}
-                >
+                <Link href={`${item.path}`} as={`${item.path}`}>
                   {item.name}
                 </Link>
               </li>

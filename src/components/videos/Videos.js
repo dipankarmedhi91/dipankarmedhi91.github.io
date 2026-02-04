@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 import * as styles from "./Videos.module.css";
-import { MyVideos } from "../../common/Constants";
+import { MyVideos } from "@/lib/Constants";
 
 const Videos = () => {
   const onVideoImageClick = (e, src) => {

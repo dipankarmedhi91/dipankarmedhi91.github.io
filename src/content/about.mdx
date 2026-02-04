@@ -1,0 +1,25 @@
+import Link from "next/link";
+import * as styles from "@/components/about/About.module.css";
+import { Linkedin, Email, Location } from "@/lib/Icons";
+import { getExperience } from "@/lib/Utils";
+import { LinkedinURL, MyLoc, EmailAddress } from "@/lib/Constants";
+
+Hi, I&apos;m Dipankar.
+
+Welcome to my personal website.
+
+Working as a fullstack JavaScript developer.
+
+{getExperience()} of agile approach software development experience.
+
+Self motivated, collaborative, versatile and a lifelong learner by heart <span role="img" aria-label="heart">❤️</span>
+
+Currently based out of Connecticut. <a title="Google Maps" className={styles.iconlinks} target="_blank" rel="noreferrer" href={MyLoc}>{Location}</a>
+
+View my <Link href="/resume" as="/resume">résumé</Link> for more information.
+
+Projects I&apos;m <Link href="/tinkerbox" as="/tinkerbox">tinkering</Link> with <span role="img" aria-label="laptop">👨‍💻💻</span>
+
+My awkward guitar <Link href="/videos" as="/videos">videos</Link> <span role="img" aria-label="guitar">🎸😄</span>
+
+Say hi on <a title="LinkedIn" className={styles.iconlinks} target="_blank" rel="noreferrer" href={LinkedinURL}>{Linkedin}</a> <a title="Email" className={styles.iconlinks} target="_blank" rel="noreferrer" href={EmailAddress}>{Email}</a>

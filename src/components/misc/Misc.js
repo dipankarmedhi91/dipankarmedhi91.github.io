@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 import * as styles from "./Misc.module.css";
-import DefaultButton from "../../common/DefaultButton";
+import DefaultButton from "@/lib/DefaultButton";
 import MyFavLearnResource from "./MyFavLearnResource";
 import MyNotes from "./MyNotes";
 
@@ -14,13 +14,13 @@ const Misc = () => {
       <section className={styles.navSection}>
         <DefaultButton
           onClick={() => btnClick("myFavRes")}
-          className={`${styles.btnStyle} ${state === 'myFavRes'? styles.btnStyleActive : ''}`}
+          className={`${styles.btnStyle} ${state === "myFavRes" ? styles.btnStyleActive : ""}`}
         >
           Fav Resources
         </DefaultButton>
         <DefaultButton
           onClick={() => btnClick("myNotes")}
-          className={`${styles.btnStyle} ${state === 'myNotes'? styles.btnStyleActive : ''}`}
+          className={`${styles.btnStyle} ${state === "myNotes" ? styles.btnStyleActive : ""}`}
         >
           Notes
         </DefaultButton>
