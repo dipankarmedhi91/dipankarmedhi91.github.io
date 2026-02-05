@@ -1,6 +1,7 @@
 .main {
   display: flex;
   width: 70%;
+  margin-top: 20px;
   .content {
     .project {
       border: 1.5px solid lightgray;
