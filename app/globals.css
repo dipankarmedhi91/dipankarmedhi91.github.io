@@ -1,5 +1,49 @@
-@media (prefers-color-scheme: dark) {
-  html {
-    /* color-scheme: dark; */
-  }
+/* CSS Variables for Light/Dark Mode */
+:root {
+  --bg-primary: #f2f4f5;
+  --bg-secondary: #f2f4f5;
+  --text-primary: #000000;
+  --text-secondary: grey;
+  --text-link: #0000ffad;
+  --text-link-hover: #0000ffdb;
+  --border-color: #000000;
+  --footer-bg: #000000;
+  --footer-text: #ffffff;
+  --btn-bg: #f2f4f5;
+  --btn-hover: #a8a8f3ad;
+  --btn-active: #6666dead;
+  --btn-active-bg: #c8c8e5ad;
+  --divider-color: grey;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #e5e5e5;
+  --text-secondary: #a0a0a0;
+  --text-link: #60a5fa;
+  --text-link-hover: #93c5fd;
+  --border-color: #e5e5e5;
+  --footer-bg: #1a1a1a;
+  --footer-text: #ffffff;
+  --btn-bg: #2a2a2a;
+  --btn-hover: #3b82f6;
+  --btn-active: #2563eb;
+  --btn-active-bg: #374151;
+  --divider-color: #4b5563;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

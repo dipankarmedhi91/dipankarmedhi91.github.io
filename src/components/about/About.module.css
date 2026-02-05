@@ -16,7 +16,7 @@
 .main article p a {
   font-weight: bold;
   text-decoration: none;
-  color: #0000ffad;
+  color: var(--text-link);
   font-size: 1.1em;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .main article p a:hover {
-  color: #0000ffdb;
+  color: var(--text-link-hover);
 }
 
 .imageSection img {

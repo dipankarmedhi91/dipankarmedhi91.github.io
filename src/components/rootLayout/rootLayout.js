@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 import * as layoutStyles from "./Layout.module.css";
 import { HamburgerMenu } from "@/lib/Icons";
+import ThemeToggle from "./ThemeToggle";
 import "./Layout.reset.css";
 
 const navItems = [
@@ -48,6 +49,7 @@ const Layout = (props) => {
           <h1>
             <Link href={"/"}>Dipankar Medhi</Link>
           </h1>
+          <ThemeToggle />
         </div>
 
         <nav className={layoutStyles.navTop}>

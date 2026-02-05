@@ -16,25 +16,26 @@
   font: inherit;
   font-weight: bold;
   height: 3em;
-  border: 2px solid black;
-  background-color: #f2f4f5;
+  border: 2px solid var(--border-color);
+  background-color: var(--btn-bg);
   padding: 1em;
   margin: 1em;
   width: 10em;
+  color: var(--text-primary);
 }
 
 .btnStyleActive {
-  background-color: #c8c8e5ad;
+  background-color: var(--btn-active-bg);
 }
 
 .btnStyle:hover {
-  background-color: #a8a8f3ad;
-  color: #292828;
+  background-color: var(--btn-hover);
+  color: var(--text-primary);
 }
 
 .btnStyle:active {
-  background-color: #6666dead;
-  color: #000000;
+  background-color: var(--btn-active);
+  color: var(--text-primary);
 }
 
 .mainSection {
