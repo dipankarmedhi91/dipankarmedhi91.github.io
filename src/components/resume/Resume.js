@@ -6,7 +6,7 @@ import StaticResume from "./StaticResume";
 import InteractiveResume from "./InteractiveResume";
 import DefaultButton from "@/lib/DefaultButton";
 
-const Resume = () => {
+const Resume = ({ certifications }) => {
   const [state, setstate] = useState("static");
   const btnClick = (state) => setstate(state);
 
@@ -27,7 +27,11 @@ const Resume = () => {
         </DefaultButton>
       </section>
       <section className={styles.mainSection}>
-        {state === "static" ? <StaticResume /> : <InteractiveResume />}
+        {state === "static" ? (
+          <StaticResume certifications={certifications} />
+        ) : (
+          <InteractiveResume />
+        )}
       </section>
     </div>
   );

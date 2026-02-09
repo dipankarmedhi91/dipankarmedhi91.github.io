@@ -1,5 +1,7 @@
 import Resume from "@/components/resume/Resume";
+import { getCertifications } from "@/lib/credlyService";
 
-export default function ResumePage() {
-  return <Resume />;
+export default async function ResumePage() {
+  const certifications = await getCertifications();
+  return <Resume certifications={certifications} />;
 }

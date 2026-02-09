@@ -3,7 +3,9 @@ import React from "react";
 import * as styles from "./StaticResume.module.css";
 import { getExperience } from "@/lib/Utils";
 
-const StaticResume = () => {
+import Image from "next/image";
+
+const StaticResume = ({ certifications = [] }) => {
   return (
     <div className={styles.main}>
       <section>
@@ -19,6 +21,7 @@ const StaticResume = () => {
           discuss about technologies, tools and architectures
         </p>
       </section>
+
       <section>
         <p className={styles.title}>Skills</p>
         <section className={styles.content}>
@@ -194,6 +197,35 @@ const StaticResume = () => {
           </ul>
         </section>
       </section>
+      {certifications.length > 0 && (
+        <section>
+          <p className={styles.title}>Certifications (Live from Credly)</p>
+          <div className={`${styles.content} ${styles.certGrid}`}>
+            {certifications.map((cert) => (
+              <a
+                key={cert.id}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.certCard}
+                title={`Verify ${cert.name}`}
+              >
+                <div className={styles.certImage}>
+                  <Image
+                    src={cert.image}
+                    alt={cert.name}
+                    width={100}
+                    height={100}
+                    unoptimized // Credly images are external and unoptimized is often safer for build-time images from remote CDN
+                  />
+                </div>
+                <div className={styles.certName}>{cert.name}</div>
+                <div className={styles.certIssuer}>{cert.issuer}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
       <section>
         <p className={styles.title}>Education</p>
         <section className={styles.content}>
